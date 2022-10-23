@@ -1,26 +1,36 @@
-import {Route, Routes, Link} from 'react-router-dom'
-import Navbar from "./components/Nav";
-import "./components/App.css"
+import {Route, Routes} from 'react-router-dom'
+import "./components/StartPage.css"
 
-import Menu from "./Menu"
+import StartPage from "./StartPage"
+import Agents from "./Agents"
+import Eventos from './Eventos'
+import Maps from './Maps'
+import Login from './Login'
+import Registration from './Register'
+import ContactUs from './ContactUs'
+import NavBar from './Nav'
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-
-      {/*<Link to='/'>LINK-NAME</Link>*/}
+      <div>
+        <NavBar/>
+      {/* <Link to='/agentes'>LINK-NAME</Link> */}
 
       <Routes>
-        <Route path='/' element={<Menu/>}/>
-        <Route path='/agentes' element='{<Agentes/>}'/>
-        <Route path='/mapas' element='{}'/>
-        <Route path='/eventos' element='{}'/>
-        <Route path='/foro' element='{}'/>
-        <Route path='/contactos' element='{}'/>
-        <Route path='/login' element='{}'/>
+        <Route path='/' element={<StartPage/>}/>
+        <Route path='/agentes' element={<Agents/>}/>
+        <Route path='/mapas' element={<Maps/>}/>
+        <Route path='/eventos' element={<Eventos/>}/>
+        <Route path='/foro' element={<Maps/>}/>
+        <Route path='/contactanos' element={<ContactUs/>}/>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/registro' element={<Registration/>}/>
       </Routes>
     </div>
+    </div>
+
+    
   );
 
 }
