@@ -26,7 +26,7 @@ function Registration(){
         display: 'block',
     };
     return(
-        <div id="Register">
+        <div className="RegistrationPage">
             <div className="iframe_logon_icon">
                 <img src={"https://i.ibb.co/hYBFvMR/login-logo.gif"} width="64%" alt="Glitch"></img>
             </div>
@@ -44,7 +44,9 @@ function Registration(){
                 <Link to='/'>
                     <registerButtonV2> REGISTRATE </registerButtonV2>
                 </Link>
-                <a className="ifUserAlreadyHasAnAccount" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Ya tienes una cuenta? Ingresa aquí </a>
+                <Link to='/login'>
+                    <a className="ifUserAlreadyHasAnAccount"> Ya tienes una cuenta? Ingresa aquí </a>
+                </Link>
             </div>
         </div>
     );

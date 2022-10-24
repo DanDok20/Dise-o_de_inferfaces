@@ -1,9 +1,6 @@
-.ContactUs {
+.ContactPage {
     background: url("../FondoContacto/contact_us_background.png");
     background-size: 100% auto;
-    background: rgb(2,0,36);
-    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,23,1) 17%, rgba(14,21,97,1) 100%);
-    height: 100vh;
 }
 
 .formulary-bg {
@@ -44,7 +41,7 @@
 
 .question-descriptions {
     text-align: left;
-    margin-top: 3%;
+    margin-top: 1.5%;
     margin-left: 45%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;

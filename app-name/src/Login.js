@@ -26,7 +26,7 @@ function Login(){
         display: 'block',
     };
     return(
-        <div className="Login">
+        <div className="LoginPage">
 
             <div className="iframe_logon_icon">
                 <img src={"https://i.ibb.co/hYBFvMR/login-logo.gif"} width="64%" alt="Glitch"></img>
