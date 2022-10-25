@@ -21,6 +21,7 @@ function ContactUs() {
           <p className="developer-info"> Cali, Colombia </p>
             
       </div>
+      <div>
       <p className="question-descriptions" required> Usuario (*)       <input className="question-box-design"></input> </p>
       <p className="question-descriptions" required> Email (*)         <input className="question-box-design"></input> </p>
       <p className="question-descriptions"> Breve descripción (*)      <input className="question-box-design"></input> </p>
@@ -31,6 +32,7 @@ function ContactUs() {
                 <option className="blackcolor4optiontext">Opción N°3</option>
                 </select> </p>
       <p className="question-descriptions" required> Mensaje (*): <textarea className="message-box-design" placeholder="Escribe tu mensaje aquí..."></textarea> </p>
+      </div>
       <sendButton> Enviar </sendButton>
     </div>
   );

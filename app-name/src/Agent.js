@@ -8,7 +8,7 @@ function Agent(props) {
         <div className="card text-center " >
 
             <div className="overflow">
-                <a href={props.url} target="_blank"><img src ={props.imageSource} alt="Imagen" className="card-img-top"/></a>
+                <a href={props.url} target="_self"><img src ={props.imageSource} alt="Imagen" className="card-img-top"/></a>
             </div>
             
             <div className="card-body">

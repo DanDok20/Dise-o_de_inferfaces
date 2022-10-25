@@ -9,6 +9,7 @@ import Login from './Login'
 import Registration from './Register'
 import ContactUs from './ContactUs'
 import NavBar from './Nav'
+import NotFoundMessage from './NotFound'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path='/contactanos' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>
+        <Route path='*' element={<NotFoundMessage/>}/>
       </Routes>
     </div>
     </div>
