@@ -20,7 +20,7 @@ let initialState = {
         id: 1,
         name: 'GRIM',
         image: agent1,
-        url: "./contactanos"
+        url: "./agenteK"
     },
     {
         id: 2,

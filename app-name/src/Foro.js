@@ -1,20 +1,44 @@
 import React from "react";
 import './components/Foro.css';
 
-function infoMap(props) {
+function Foro() {
     return (
-        <div className="post" >
-            <image src={props.imageSource} alt={props.name} className="userPhoto"/>
-            <div className="information">
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
+        <div>
+            <div className="post" >
+                <img src="./user_icon.png" alt="user"className="userPhoto" width="100%" height="50%"></img>
+                <div className="information">
+                    <h2>Lorem ipsu!</h2>
+                    <p>Jadwo dawoe djas dakew<br/>Jodwowkd! dieha Ndiwde cnciac</p>
+                </div>
+                <div className="rate">
+                    <div className="like"></div>
+                    <div className="dislike"></div>
+                </div>
             </div>
-            <div className="like">
-                <div className="like">50</div>
-                <div className="dislike">50</div>
+            <div className="post" >
+                <img src="./user_icon.png" alt="user"className="userPhoto" width="100%" height="50%"></img>
+                <div className="information">
+                    <h2>Lorem ipsu rataka Kiwxcs?</h2>
+                    <p>Jadwo dawoe djas dakedwi idwa mdaeolk Jaka!<br/>Hua jies Iksd sas,ieha Ndiwde cnciac</p>
+                </div>
+                <div className="rate">
+                    <div className="like"></div>
+                    <div className="dislike"></div>
+                </div>
+            </div>
+            <div className="post" >
+                <img src="./user_icon.png" alt="user"className="userPhoto" width="100%" height="50%"></img>
+                <div className="information">
+                    <h2>Yhawja Juw xcal!! Knase? Dasescm...</h2>
+                    <p>Jadwo dawoe djas dakew<br/>Jodwowkd! dieha Ndiwde cnciac</p>
+                </div>
+                <div className="rate">
+                    <div className="like"></div>
+                    <div className="dislike"></div>
+                </div>
             </div>
         </div>
     )
 }
 
-export default infoMap
+export default Foro
