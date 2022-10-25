@@ -10,11 +10,15 @@ function StartPage() {
       </div>
       
       <div className='comienzo'>
+	<div className='glowing-to-the-right-top'></div>
+        <div className='glowing-to-the-right-top'></div>
+
         <Link to='/foro'>
           <button>EMPEZAR</button>
         </Link>
         
-        
+	<div className='glowing-to-the-right-bot'></div>
+        <div className='glowing-to-the-right-bot'></div>
       </div>
     </div>
   );
