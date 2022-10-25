@@ -5,8 +5,8 @@
 
 .StartPage {
   background: rgb(2,0,36);
-    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,23,1) 17%, rgba(14,21,97,1) 100%);
-    height: 100vh;
+  background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,23,1) 17%, rgba(14,21,97,1) 100%);
+  height: 100vh;
 }
 
 iframe{
@@ -20,6 +20,7 @@ iframe{
 }
 
 button{
+  margin-top: 70px;
   margin-bottom: auto;
   display: inline-flex;
   position: absolute;
@@ -36,4 +37,65 @@ button{
 
 button:hover{
   background-color: #152480;
+}
+
+.glowing-to-the-right-top {
+  position: relative;
+  width: auto;
+  height: 10px;
+  background: #fff;
+  margin-top: 0;
+}
+
+.glowing-to-the-right-top::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, #fff, rgb(128, 128, 128));
+  animation: animate 3s linear infinite;
+  background-size: 500%;
+}
+
+.glowing-to-the-right-top::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, #fff, rgb(128, 128, 128));
+  animation: glow-to-right 6s linear infinite;
+  background-size: 500%;
+}
+
+@keyframes glow-to-right {
+  0%{
+    background-position: 0 0;
+  }0%{
+    background-position: 500% 0;
+  }
+}
+
+.glowing-to-the-right-bot {
+  position: relative;
+  top: 35vh;
+  width: auto;
+  height: 10px;
+  background: #fff;
+  margin-top: 0;
+}
+
+.glowing-to-the-right-bot::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff, rgb(128, 128, 128));
+  animation: glow-to-right 6s linear infinite;
+  background-size: 500%;
+}
+
+.glowing-to-the-right-bot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #fff, rgb(128, 128, 128));
+  animation: glow-to-right 6s linear infinite;
+  background-size: 500%;
 }
