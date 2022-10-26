@@ -16,74 +16,74 @@ let initialState = {
         id: 1,
         title: 'Estadio',
         image: map1,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/stadium"
     },
     {
         id: 2,
         title: 'Combate Cercano',
         image: map2,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/close-quarter"
     },
     {
         id: 3,
         title: 'Praderas Esmeralda',
         image: map3,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/emerald-plains"
     },
     {
         id: 4,
         title: 'Banco',
         image: map4,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/bank"
     },
     {
         id: 5,
         title: 'Frontera',
         image: map5,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
     {
         id: 6,
         title: 'Chalet',
         image: map6,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
     {
         id: 7,
         title: "Club",
         image: map7,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
     {
         id: 8,
         title: 'Litoral',
         image: map8,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
  
     {
         id: 9,
         title: 'consulado',
         image: map9,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
     {
         id: 10,
         title: 'Favela',
         image: map10,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
     {
         id: 11,
         title: 'Fortaleza',
         image: map11,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
     {
         id: 12,
         title: 'Base Hereford',
         image: map12,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     }]
 };
 

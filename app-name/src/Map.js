@@ -1,6 +1,6 @@
 import React from "react";
 import './components/Map.css'
-
+import {Link} from 'react-router-dom'
 
 
 function Map(props) {
@@ -8,7 +8,7 @@ function Map(props) {
         <div className="card text-center" >
 
             <div className="overflow">
-                <a href={props.url} target="_blank"><img src ={props.imageSource} alt="Imagen" className="card-img-top"/></a>
+                <a href={props.url}><img src ={props.imageSource} alt="Imagen" className="card-img-top"/></a>
             </div>
             
             <div className="card-body">

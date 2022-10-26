@@ -20,55 +20,55 @@ let initialState = {
         id: 1,
         name: 'GRIM',
         image: agent1,
-        url: "./agenteK"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/grim"
     },
     {
         id: 2,
         name: 'SENS',
         image: agent2,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/sens"
     },
     {
         id: 3,
         name: 'OSA',
         image: agent3,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/osa"
     },
     {
         id: 4,
         name: 'FLORES',
         image: agent4,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/flores"
     },
     {
         id: 5,
         name: 'ZERO',
         image: agent5,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/zero"
     },
     {
         id: 6,
         name: 'ACE',
         image: agent6,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/ace"
     },
     {
         id: 7,
         name: 'IANA',
         image: agent7,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/iana"
     },
     {
         id: 8,
         name: 'KALI',
         image: agent8,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/kali"
     }],
     Defensores: [{
         id: 9,
         name: 'AZAMI',
         image: agent9,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        url: "hhttps://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/azami"
     },
     {
         id: 10,

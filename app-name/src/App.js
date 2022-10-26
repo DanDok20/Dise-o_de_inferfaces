@@ -12,6 +12,7 @@ import NavBar from './Nav'
 import NotFoundMessage from './NotFound'
 import Foro from './Foro'
 import infoAgent from './InfoAgent'
+import infoMap from './infoMap'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>
         <Route path='/agenteK' element={<infoAgent/>}/>
+        <Route path='/mapaK' element={<infoMap/>}/>
         <Route path='*' element={<NotFoundMessage/>}/>
       </Routes>
     </div>
