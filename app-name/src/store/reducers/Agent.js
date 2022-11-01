@@ -20,7 +20,7 @@ let initialState = {
         id: 1,
         name: 'GRIM',
         image: agent1,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/grim"
+        descripcion: "Cuando crecía en Jurong Singapur, resultaba habitual encontrarse a Keng Boon en la selva, poniendo a prueba las habilidades de supervivencia que le enseñaba su padre. Con 18 años realizó su servicio militar, destacando en la NDU la unidad de élite de las fuerzas navales especiales de Singapur. Keng Boon fue un alumno excelente en la Escuela de Submarinistas FMS, y gracias a su concentración y resistencia completó el entrenamiento y pasó a formar parte del Grupo de Desminado Submarino CDG."
     },
     {
         id: 2,

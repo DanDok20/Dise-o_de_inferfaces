@@ -22,17 +22,17 @@ function App() {
       {/* <Link to='/agentes'>LINK-NAME</Link> */}
 
       <Routes>
-        <Route path='/' element={<StartPage/>}/>
-        <Route path='/agentes' element={<Agents/>}/>
-        <Route path='/mapas' element={<Maps/>}/>
-        <Route path='/eventos' element={<Eventos/>}/>
-        <Route path='/foro' element={<Foro/>}/>
-        <Route path='/contactanos' element={<ContactUs/>}/>
+        <Route path='/' element={<StartPage/>} exact/>
+        <Route path='/agentes' element={<Agents/>} exact/>
+        <Route path='/agentes/:agentName' element={<infoAgent/>} exact/>
+        <Route path='/mapas' element={<Maps/>} exact/>
+        <Route path='/eventos' element={<Eventos/>} exact/>
+        <Route path='/foro' element={<Foro/>} exact/>
+        <Route path='/contactanos' element={<ContactUs/>} exact/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/registro' element={<Registration/>}/>
-        <Route path='/agenteK' element={<infoAgent/>}/>
-        <Route path='/mapaK' element={<infoMap/>}/>
-        <Route path='*' element={<NotFoundMessage/>}/>
+        <Route path='/registro' element={<Registration/>} exact/>
+        <Route path='/mapaK' element={<infoMap/>} exact/>
+        <Route path="*" element={<NotFoundMessage/>}/>
       </Routes>
     </div>
     </div>

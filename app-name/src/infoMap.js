@@ -1,7 +1,7 @@
 import React from "react";
 import './components/infoMap.css';
 
-function infoMap() {
+function infoMap(props) {
     return (
         <div className="map" >
             <image src="" alt={props.name} className="mapPhoto"/>

@@ -1,16 +1,34 @@
 import React from "react";
+import { connect } from "react-redux";
+import { useParams } from "react-router-dom";
 import './components/infoAgent.css';
 
-function infoAgent() {
+function infoAgent({atacantes, defensores}) {
+    const {params} = useParams();
+    console.log(useParams());
+    var object;
+    if ((atacantes.find((agent) => agent.name === params))!==undefined){
+        object = atacantes.find((agent) => agent.name === params);
+    }
+    if ((defensores.find((agent) => agent.name === params))!==undefined){
+        object = defensores.find((agent) => agent.name === params);
+    }
     return (
         <div className="agent" >
-            <image src="src\agents\agent1.jpg" alt="Agente"className="agentPhoto"/>
+            <image src={object.image} alt={"Agente "+object.name} className="agentPhoto"/>
             <div className="information">
-                <h2>GRIM</h2>
-                <p>Cuando crecía en Jurong Singapur, resultaba habitual encontrarse a Keng Boon en la selva, poniendo a prueba las habilidades de supervivencia que le enseñaba su padre. Con 18 años realizó su servicio militar, destacando en la NDU la unidad de élite de las fuerzas navales especiales de Singapur. Keng Boon fue un alumno excelente en la Escuela de Submarinistas FMS, y gracias a su concentración y resistencia completó el entrenamiento y pasó a formar parte del Grupo de Desminado Submarino CDG.</p>
+                <h2>{object.name}</h2>
+                <p>{object.descripcion}</p>
             </div>            
         </div>
     )
 }
 
-export default infoAgent;
+const mapStateToProps = (state) =>{
+    return{
+        atacantes: state.agent.Atacantes,
+        defensores: state.agent.Defensores
+    }
+}
+
+export default connect(mapStateToProps)(infoAgent);
