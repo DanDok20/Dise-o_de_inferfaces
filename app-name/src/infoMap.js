@@ -1,7 +1,7 @@
 import React from "react";
 import './components/infoMap.css';
 
-function infoMap(props) {
+function InfoMap(props) {
     return (
         <div className="map" >
             <image src="" alt={props.name} className="mapPhoto"/>
@@ -17,4 +17,4 @@ function infoMap(props) {
     )
 }
 
-export default infoMap;
+export default InfoMap;

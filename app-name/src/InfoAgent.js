@@ -3,23 +3,22 @@ import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
 import './components/infoAgent.css';
 
-function infoAgent({atacantes, defensores}) {
-    const {params} = useParams();
-    console.log(useParams());
+function InfoAgent({atacantes, defensores}) {
+    const params = useParams();
     var object;
-    if ((atacantes.find((agent) => agent.name === params))!==undefined){
-        object = atacantes.find((agent) => agent.name === params);
+    if ((atacantes.find((agent) => agent.name === params.agentName))!==undefined){
+        object = atacantes.find((agent) => agent.name === params.agentName);
     }
-    if ((defensores.find((agent) => agent.name === params))!==undefined){
-        object = defensores.find((agent) => agent.name === params);
+    else if ((defensores.find((agent) => agent.name === params.agentName))!==undefined){
+        object = defensores.find((agent) => agent.name === params.agentName);
     }
     return (
         <div className="agent" >
-            <image src={object.image} alt={"Agente "+object.name} className="agentPhoto"/>
+            <img src={object.image} alt={"Agente "+object.name} className="agentPhoto"/>
             <div className="information">
                 <h2>{object.name}</h2>
                 <p>{object.descripcion}</p>
-            </div>            
+            </div>
         </div>
     )
 }
@@ -31,4 +30,4 @@ const mapStateToProps = (state) =>{
     }
 }
 
-export default connect(mapStateToProps)(infoAgent);
+export default connect(mapStateToProps)(InfoAgent);

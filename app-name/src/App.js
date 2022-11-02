@@ -11,8 +11,8 @@ import ContactUs from './ContactUs'
 import NavBar from './Nav'
 import NotFoundMessage from './NotFound'
 import Foro from './Foro'
-import infoAgent from './InfoAgent'
-import infoMap from './infoMap'
+import InfoAgent from './InfoAgent'
+import InfoMap from './InfoMap'
 
 function App() {
   return (
@@ -22,16 +22,16 @@ function App() {
       {/* <Link to='/agentes'>LINK-NAME</Link> */}
 
       <Routes>
-        <Route path='/' element={<StartPage/>} exact/>
-        <Route path='/agentes' element={<Agents/>} exact/>
-        <Route path='/agentes/:agentName' element={<infoAgent/>} exact/>
-        <Route path='/mapas' element={<Maps/>} exact/>
-        <Route path='/eventos' element={<Eventos/>} exact/>
-        <Route path='/foro' element={<Foro/>} exact/>
-        <Route path='/contactanos' element={<ContactUs/>} exact/>
+        <Route path='/' element={<StartPage/>}/>
+        <Route path='/agentes' element={<Agents/>}/>
+        <Route path='/agentes/:agentName' element={<InfoAgent/>}/>
+        <Route path='/mapas' element={<Maps/>}/>
+        <Route path='/eventos' element={<Eventos/>}/>
+        <Route path='/foro' element={<Foro/>}/>
+        <Route path='/contactanos' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
-        <Route path='/registro' element={<Registration/>} exact/>
-        <Route path='/mapaK' element={<infoMap/>} exact/>
+        <Route path='/registro' element={<Registration/>}/>
+        <Route path='/mapaK' element={<InfoMap/>}/>
         <Route path="*" element={<NotFoundMessage/>}/>
       </Routes>
     </div>

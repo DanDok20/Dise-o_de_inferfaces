@@ -1,116 +1,99 @@
-import agent1 from '../../agents/agent1.jpg'
-import agent2 from '../../agents/agent2.jpg'
-import agent3 from '../../agents/agent3.jpg'
-import agent4 from '../../agents/agent4.jpg'
-import agent5 from '../../agents/agent5.jpg'
-import agent6 from '../../agents/agent6.jpg'
-import agent7 from '../../agents/agent7.jpg'
-import agent8 from '../../agents/agent8.jpg'
-import agent9 from '../../agents/agent9.jpg'
-import agent10 from '../../agents/agent10.jpg'
-import agent11 from '../../agents/agent11.jpg'
-import agent12 from '../../agents/agent12.jpg'
-import agent13 from '../../agents/agent13.jpg'
-import agent14 from '../../agents/agent14.jpg'
-import agent15 from '../../agents/agent15.jpg'
-import agent16 from '../../agents/agent16.jpg'
-
 let initialState = {
     Atacantes: [{
         id: 1,
         name: 'GRIM',
-        image: agent1,
+        image: "agents/agent1.jpg",
         descripcion: "Cuando crecía en Jurong Singapur, resultaba habitual encontrarse a Keng Boon en la selva, poniendo a prueba las habilidades de supervivencia que le enseñaba su padre. Con 18 años realizó su servicio militar, destacando en la NDU la unidad de élite de las fuerzas navales especiales de Singapur. Keng Boon fue un alumno excelente en la Escuela de Submarinistas FMS, y gracias a su concentración y resistencia completó el entrenamiento y pasó a formar parte del Grupo de Desminado Submarino CDG."
     },
     {
         id: 2,
         name: 'SENS',
-        image: agent2,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/sens"
+        image: "agents/agent2.jpg",
+        descripcion: "Al crecer en una unidad familiar muy unida, Ngoma pudo perseguir sus intereses sin mucha resistencia. Aprendieron todo lo que pudieron sobre psicología y física, mientras recibían formación en música clásica con sus dos hermanos menores. Ngoma también aprendió los conceptos básicos de la mecánica en el garaje de su padre, completando efectivamente el conjunto de habilidades que luego aplicarían en su carrera."
     },
     {
         id: 3,
         name: 'OSA',
-        image: agent3,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/osa"
+        image: "agents/agent3.jpg",
+        descripcion: "Nacida en la familia Janković, propietaria de jugueterías europeas, Anja viajaba constantemente con sus padres, por lo que nunca se sintió estable hasta que se mudó con su tía a Croacia a la edad de 6 años. Allí comenzó sus estudios y aprendió el oficio familiar de fabricación de juguetes, mientras desarrollaba una obsesión cercana por las películas de ciencia ficción de los años 60."
     },
     {
         id: 4,
         name: 'FLORES',
-        image: agent4,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/flores"
+        image: "agents/agent4.jpg",
+        descripcion: "Manteniendo a su madre a medida que su salud empeoraba lentamente, Lucero no estaba satisfecho con el trabajo en el sector público y no estaba impresionado con la escuela militar. Esto lo llevó al robo como ocupación, y encontró un propósito en robar a criminales poderosos para retribuir a los pobres. Operando en el distrito de Flores de Buenos Aires, la notoriedad de Lucero creció y llegó a ser conocido como 'el hombre de Flores'."
     },
     {
         id: 5,
         name: 'ZERO',
-        image: agent5,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/zero"
+        image: "agents/agent5.jpg",
+        descripcion: "Aunque la CIA y Third Echelon han clasificado la mayor parte de la infancia de Fisher, se sabe que nació en Towson, Maryland, un suburbio de Baltimore, donde fue criado por su abuela paterna, Sarah. Se matriculó en un internado militar donde aprendió a concentrar su energía, perfeccionar sus habilidades y seguir órdenes o asegurarse de ocultar la evidencia."
     },
     {
         id: 6,
         name: 'ACE',
-        image: agent6,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/ace"
+        image: "agents/agent6.jpg",
+        descripcion: "Nacido en un pueblo tranquilo pero histórico, Haugland se benefició desde el principio de los grandes elogios y la falta de competencia. Siempre el mejor en todo lo que se proponía, fácilmente se imaginaba a sí mismo como un cirujano pediátrico admirado y se matriculó en la escuela de medicina. Sin embargo, pronto descubrió que memorizar la teoría no era de su agrado y, en cambio, optó por la formación de paramédicos para entrar en acción más rápidamente."
     },
     {
         id: 7,
         name: 'IANA',
-        image: agent7,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/iana"
+        image: "agents/agent7.jpg",
+        descripcion: "La madre de Meijer fue ingeniera principal en el Instrumento de Estructura Atmosférica Huygens que aterrizó en Titán. Animada a alcanzar las estrellas desde temprana edad, estudió Ingeniería Aeroespacial con miras a convertirse en piloto de combate. Desafortunadamente, su albinismo significaba que tenía retina comprometida y su solicitud fue rechazada. Cambió su enfoque a la ingeniería de sistemas, desarrollando lentes de contacto que sobrecorregían su déficit genético mientras integraba una superposición AR de última generación."
     },
     {
         id: 8,
         name: 'KALI',
-        image: agent8,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/kali"
+        image: "agents/agent8.jpg",
+        descripcion: "Nacida de padres adinerados, la capacidad de Shah para lograr sus objetivos estuvo asegurada desde una edad temprana. Esta seguridad en sí misma se topó con una pared de ladrillos cuando trató de unirse al ejército. Su interés por las artes marciales la llevó a alistarse, pero pronto descubrió que a las mujeres no se les permitía servir en unidades de combate. A pesar de todo su dinero y toda su influencia social, había encontrado un obstáculo entre ella y algo que quería, y no se movía. Al dejar el ejército, creó su propia Compañía de Seguridad Privada para operar dentro de las fronteras de la India, luego una Compañía Militar Privada, NIGHTHAVEN, para operar en el extranjero. Rutinariamente negocia contratos multimillonarios con términos increíblemente favorables. Su crueldad es legendaria, pero al convertirse en un recurso que el gobierno indio necesita desesperadamente, eludió las leyes que la alejaban de su objetivo y revalidó su autopercepción como una fuerza imparable en un mundo mayormente estático."
     }],
     Defensores: [{
         id: 9,
         name: 'AZAMI',
-        image: agent9,
-        url: "hhttps://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/azami"
+        image: "agents/agent9.jpg",
+        descripcion: "hhttps://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/azami"
     },
     {
         id: 10,
         name: 'THORN',
-        image: agent10,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent10.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     },
     {
         id: 11,
         name: 'THUNDERBIRD',
-        image: agent11,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent11.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     },
     {
         id: 12,
         name: 'ARUNI',
-        image: agent12,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent12.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     },
     {
         id: 13,
         name: 'MELUSI',
-        image: agent13,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent13.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     },
     {
         id: 14,
         name: 'ORYX',
-        image: agent14,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent14.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     },
     {
         id: 15,
         name: 'WAMAI',
-        image: agent15,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent15.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     },
     {
         id: 16,
         name: 'GOYO',
-        image: agent16,
-        url: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        image: "agents/agent16.jpg",
+        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
     }]
 };
 
