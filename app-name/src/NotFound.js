@@ -10,7 +10,7 @@ function NotFoundMessage() {
                 <p id="error_text_format">
                     Parece que acá debería haber existido algo, pero no encontramos nada.<br/> 
                     Intentalo de nuevo, o regresa a la pagina principal.<br/>
-                    <img src="broken_gun.png" alt="ErrorGun"></img><br/>
+                    <img src="/broken_gun.png" alt="ErrorGun"></img><br/>
                     <Link to='/'>
                     <button type="button" class="btn btn-outline-light btn-lg">Volver</button>
                     </Link>

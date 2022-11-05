@@ -17,7 +17,6 @@ import InfoMap from './InfoMap'
 function App() {
   return (
     <div className="App">
-      <div>
         <NavBar/>
       {/* <Link to='/agentes'>LINK-NAME</Link> */}
 
@@ -34,10 +33,7 @@ function App() {
         <Route path='/mapaK' element={<InfoMap/>}/>
         <Route path="*" element={<NotFoundMessage/>}/>
       </Routes>
-    </div>
-    </div>
-
-    
+    </div>    
   );
 
 }

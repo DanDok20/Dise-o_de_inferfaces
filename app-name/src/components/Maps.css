@@ -4,7 +4,7 @@
 
 }
 
-.Titulo{
-    color: #0ceb00;
-    padding-top: 100px;
+.Titulo *{
+    color: #589c00;
+    padding-top: 50px;
 }

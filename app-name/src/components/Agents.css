@@ -3,12 +3,17 @@
     background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,23,1) 17%, rgba(14,21,97,1) 100%);
 }
 
-.Titulo1{
+.Titulo1 *{
     color: #eb0000;
+    padding-top: 50px;
+}
+
+.Titulo2 *{
+    color: #00ddff;
     padding-top: 100px;
 }
 
-.Titulo2{
-    color: #00ddff;
-    padding-top: 100px;
+#agentesLink *{
+  background-color: rgba(255, 255, 255, 0.584);
+  text-decoration: double;
 }

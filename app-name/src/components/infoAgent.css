@@ -1,6 +1,6 @@
 .agent{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     column-gap: 10%;
     margin-left: 10%;
     margin-right: 10%;
@@ -9,6 +9,6 @@
 
 .agentPhoto {
     width: 100%;
-    height: 80vh;
+    height: auto;
     text-align: center !important;
 }

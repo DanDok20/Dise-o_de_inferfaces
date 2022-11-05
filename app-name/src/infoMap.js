@@ -1,20 +1,25 @@
 import React from "react";
+import { connect } from "react-redux";
+import { useParams } from "react-router-dom";
 import './components/infoMap.css';
 
-function InfoMap(props) {
+function InfoMap({mapas}) {
+    //String.replace(" ", "-");
     return (
         <div className="map" >
-            <image src="" alt={props.name} className="mapPhoto"/>
+            <image src="" alt={mapas.title} className="mapPhoto"/>
             <div className="information">
-                <h2>{props.name}</h2>
-                <p>{props.description}</p>
-            </div>
-            <div className="planos">
-                <h1>Planos del Mapa</h1>
-                <image src={props.imageSourcePlanos} alt="Planos" className="blueprints"></image>
+                <h2>{mapas.title}</h2>
+                <p>{mapas.description}</p>
             </div>
         </div>
     )
 }
 
-export default InfoMap;
+const mapStateTomapas = (state) =>{
+    return{
+        mapas: state.map.Mapas
+    }
+}
+
+export default connect(mapStateTomapas)(InfoMap);
