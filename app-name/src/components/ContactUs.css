@@ -1,7 +1,8 @@
 .ContactPage {
-    background: url("../FondoContacto/contact_us_background.png");
-    background-size: 100% auto;
-    height: 80vh;
+    background-image: url('https://i.ibb.co/ryD16bH/contact-us-background.png');
+    background-size: cover;
+    min-height: 90vh;
+    position: static;
 }
 
 .formulary-bg {
@@ -18,7 +19,7 @@
 .title-details {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 40px;
+    font-size: calc(1.525rem + 1.2vw);
     text-shadow: 5px 5px #092536;
     margin-top: 14px;
     color: #b1d4e0;
@@ -27,7 +28,7 @@
 .description {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: calc(0.525rem + 0.7vw);
     color: #ffff;
 }
 
@@ -41,10 +42,9 @@
 
 .question-descriptions {
     text-align: left;
-    margin-top: 0;
-    margin-left: 45%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    margin-left: 15%;
     color: #ffff;
 }
 
@@ -97,10 +97,9 @@
 
 sendButton{
     display: inline-flex;
-    position: absolute;
-    justify-content: right;
-    margin-left: 78%;
-    margin-top: -25%;
+    position: relative;
+    margin-top: 70%;
+    margin-left: -50%;
     padding: 55px 80px;
     border-radius: 25px;
     font-size: 2.4vw;
