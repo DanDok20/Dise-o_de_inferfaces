@@ -1,8 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./components/ContactUs.css";
 
 function ContactUs() {
-  return(
+    useEffect(() => {
+        document.getElementById("contactanosLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
+        return () => {
+            document.getElementById("contactanosLink").firstElementChild.style.background = "none";
+        };
+    });
+    return(
       <div className="ContactPage">
           <div class="container-fluid d-flex justify-content-center">
               <div class="row">

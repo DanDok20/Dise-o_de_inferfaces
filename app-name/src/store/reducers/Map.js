@@ -3,17 +3,17 @@ let initialState = {
         id: 1,
         title: 'Estadio',
         image: "/mapas/map1.jpg",
-        description: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/stadium"
+        description: "¡Redescubre el estadio! El mapa icónico del evento Road to SI 2021 se ha pulido para hacer su entrada definitiva en el juego. Cuenta con paredes de vidrio irrompibles que crean un grado inusual de transparencia entre atacantes y defensores en ciertos lugares. Y el pórtico que aparece en lo alto de la estructura principal permite que los atacantes se acerquen con estilo. Una vez dentro, utilice las áreas codificadas por colores.-info/maps/stadium"
     },
     {
         id: 2,
-        title: 'Combate Cercano',
+        title: 'Combate-Cercano',
         image: "/mapas/map2.jpg",
         description: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/close-quarter"
     },
     {
         id: 3,
-        title: 'Praderas Esmeralda',
+        title: 'Praderas-Esmeralda',
         image: "/mapas/map3.jpg",
         description: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps/emerald-plains"
     },
@@ -50,7 +50,7 @@ let initialState = {
  
     {
         id: 9,
-        title: 'consulado',
+        title: 'Consulado',
         image: "/mapas/map9.jpg",
         description: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     },
@@ -68,7 +68,7 @@ let initialState = {
     },
     {
         id: 12,
-        title: 'Base Hereford',
+        title: 'Base-Hereford',
         image: "/mapas/map12.jpg",
         description: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/maps"
     }]

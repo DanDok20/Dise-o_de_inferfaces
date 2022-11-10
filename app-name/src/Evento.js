@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './components/Evento.css'
 
-
-
 function Evento(props) {
+    useEffect(() => {
+        document.getElementById("eventosLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
+        return () => {
+            document.getElementById("eventosLink").firstElementChild.style.background = "none";
+        };
+    });
     return (
         <div className="card text-center" >
 

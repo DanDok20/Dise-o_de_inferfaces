@@ -25,12 +25,12 @@ function App() {
         <Route path='/agentes' element={<Agents/>}/>
         <Route path='/agentes/:agentName' element={<InfoAgent/>}/>
         <Route path='/mapas' element={<Maps/>}/>
+        <Route path='/mapas/:mapName' element={<InfoMap/>}/>
         <Route path='/eventos' element={<Eventos/>}/>
         <Route path='/foro' element={<Foro/>}/>
         <Route path='/contactanos' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>
-        <Route path='/mapaK' element={<InfoMap/>}/>
         <Route path="*" element={<NotFoundMessage/>}/>
       </Routes>
     </div>    

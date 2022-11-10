@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './components/Foro.css';
 
 function Foro() {
+    useEffect(() => {
+        document.getElementById("foroLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
+        return () => {
+            document.getElementById("foroLink").firstElementChild.style.background = "none";
+        };
+    });
     return (
         <div>
             <div className="post" >

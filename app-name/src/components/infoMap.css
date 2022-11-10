@@ -1,10 +1,8 @@
 .map{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 10%;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.planos{
-    color: aqua;
+    color: white;
 }

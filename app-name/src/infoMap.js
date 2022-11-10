@@ -4,13 +4,14 @@ import { useParams } from "react-router-dom";
 import './components/infoMap.css';
 
 function InfoMap({mapas}) {
-    //String.replace(" ", "-");
+    const params = useParams();
+    const object = mapas.find((map) => map.title === params.mapName);
     return (
-        <div className="map" >
-            <image src="" alt={mapas.title} className="mapPhoto"/>
+        <div className="map">
+            <img src={object.image} alt={object.title} className="mapPhoto"/>
             <div className="information">
-                <h2>{mapas.title}</h2>
-                <p>{mapas.description}</p>
+                <h2>{object.title}</h2>
+                <p>{object.description}</p>
             </div>
         </div>
     )

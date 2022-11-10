@@ -51,49 +51,52 @@ let initialState = {
         id: 9,
         name: 'AZAMI',
         image: "/agents/agent9.jpg",
-        descripcion: "hhttps://www.ubisoft.com/en-gb/game/rainbow-six/siege/game-info/operators/azami"
+        descripcion: "Criado en la ciudad de Kioto, Azami desdibuja las líneas entre lo ultramoderno y lo tradicional. Encerrada por las rígidas reglas de su hogar, encontró salidas para expresarse a través de la moda y el combate físico. Su enfoque y determinación le permitieron a Azami progresar rápidamente en las filas de Aikido. Esta aptitud, así como su dedicado estudio de idiomas, le fueron muy útiles cuando se mudó a Tokio para estudiar en la Academia de Policía Metropolitana."
     },
     {
         id: 10,
         name: 'THORN',
         image: "/agents/agent10.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "Thorn creció en una granja en una parte de Irlanda conocida por dos cosas: las carreras de caballos y el entrenamiento militar. Durante varias generaciones, su familia estuvo muy involucrada con ambos. Cuando no estaba superando a uno de sus cinco hermanos mayores, ayudaba a sus padres a criar pura sangre para las pistas y para la división montada de la policía nacional de Irlanda. Es una tradición de la familia Hawthorn abandonar eventualmente la vida agrícola por el ejército, ya que se considera 'más fácil'. Sin embargo, Thorn optó por seguir a los caballos y se unió a la Garda Síochána."
     },
     {
         id: 11,
         name: 'THUNDERBIRD',
         image: "/agents/agent11.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "Nacida en los Territorios Nakoda de Saskatchewan, la primera lección de Thunderbird de su madre fue la importancia de la comunidad. Su primera introducción a los motores fue en las rodillas de su padre, él le enseñó a entender los helicópteros antes de aprender a volar uno.\
+        Siempre ansiosa por nuevas experiencias, se inscribió en el Programa Bold Eagle a los diecisiete años, donde se destacó en el entrenamiento militar básico. Mientras se beneficiaba de la guía de los ancianos de la comunidad y de los instructores indígenas, este programa despertó su interés en preservar y proteger lo que más amaba, el estilo de vida Nakoda."
     },
     {
         id: 12,
         name: 'ARUNI',
         image: "/agents/agent12.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "As a private detective, her discovery of a bomb plot in Bangkok brought Aruni to the attention of the Royal Thai Police (RTP). Her knack for connecting the dots between seemingly-unrelated incidents earned her grudging respect from Thailand’s male-dominated law enforcement agencies, as well as hostility from numerous criminal syndicates.\
+        The RTP offered Aruni a Detective position with the Crime Suppression Division, where she dismantled a human trafficking ring and foiled no fewer than four bomb plots. Her ability to track and connect diverse shipments of explosive materials was lauded by her superiors. Unfortunately, Aruni’s police career ended when she was nearly killed during an operation in Bangkok."
     },
     {
         id: 13,
         name: 'MELUSI',
         image: "/agents/agent13.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "Nacida en la pequeña ciudad de Louwsburg, cerca de la reserva de caza de Ithala, Ndlovu pasó muchos años explorando con su amiga, Elna Gardiner. A medida que crecían, también lo hacía su aprecio y sentido de responsabilidad por los animales de la reserva. La amenaza de los cazadores furtivos alimentó su determinación y, aunque estaban obsesionados, se concentraron en las vidas que podían salvar, en lugar de las bajas pasadas.\
+        Ndlovu se inscribió en la Fuerza de Defensa Nacional de Sudáfrica para ampliar su conjunto de habilidades y financiar su capacitación como guardabosques de campo. Su persistencia y dedicación llamaron la atención del 1 Batallón de Paracaidistas, hasta que una emboscada en la República Centroafricana la dejó gravemente herida."
     },
     {
         id: 14,
         name: 'ORYX',
         image: "/agents/agent14.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "Poco se sabe sobre la vida de Al Hadid. Creció en un pequeño pueblo adyacente a una base de la fuerza aérea y, según todos los informes, tuvo una infancia normal hasta que desapareció de los registros internacionales durante más de quince años. Eventualmente reapareció en Jordania, pero se quedó solo el tiempo suficiente para obtener un nuevo pasaporte. Aprendió lucha libre en Estambul, muay thai en Bangkok, conducción táctica en Berlín y puntería de precisión en Damasco, probablemente trabajando para un patrocinador paramilitar. Luego desapareció de nuevo."
     },
     {
         id: 15,
         name: 'WAMAI',
         image: "/agents/agent15.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "Nacido en una familia de pescadores en la costa de Kenia, Furaha pasó su infancia cazando tiburones y recolectando tesoros perdidos del fondo del océano del archipiélago de Lamu. Pronto se hizo evidente que podía permanecer bajo el agua mucho más tiempo que sus compañeros, y la exploración médica reveló una fisiología anormal que contribuyó a la creencia de larga data de Furaha de que 'no era de aquí'. Cuando surgió la oportunidad de unirse a la Armada de Kenia, y más tarde a la Unidad de Embarcaciones Especiales de Kenia, hizo un buen uso de sus habilidades. Rápidamente llamó la atención de los generales dentro de la marina, así como de la comunidad científica mundial por sus prolíficas y frecuentes inmersiones en apnea sin precedentes. Más tarde hizo la transición a NIGHTHAVEN, atraído por la promesa de más tiempo de inactividad y un bote privado que lo llevaría a donde podría ser su próximo sitio de buceo."
     },
     {
         id: 16,
         name: 'GOYO',
         image: "/agents/agent16.jpg",
-        descripcion: "https://www.ubisoft.com/en-gb/game/rainbow-six/siege"
+        descripcion: "César Ruiz Hernández tenía once años cuando una bomba destruyó su casa, matando a su padre ya su hermana e hiriendo gravemente a su madre. Con la ayuda de la especialista Azucena Rocío “Amaru” Quispe, la madre de César, Sofía, le enseñó a observar su entorno y evitar a los otros niños de su edad que se habían visto envueltos en asuntos relacionados con pandillas. Ella lo animó a matricularse en la Heroica Escuela Naval Militar, donde se graduó como teniente de corbeta. Se unió a la Infantería Naval, luego al Batallón de Comando Anfibio, participando extensamente en operaciones contra el contrabando y varios arrestos de alto perfil. Convertirse en miembro de las Fuerzas Especiales lo introdujo a la realidad de que las drogas ya no eran la principal fuente de ingresos de los cárteles. Comenzó a trabajar con la UNESCO e INTERPOL para combatir el tráfico de antigüedades, donde captó la atención de Rainbow como una mente con un agudo sentido táctico y una excepcional visión de futuro."
     }]
 };
 

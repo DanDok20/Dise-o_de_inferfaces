@@ -1,10 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Agent from "./Agent";
 import './components/Agents.css'
 import {connect} from "react-redux"
 
 function Agents({ atacantes, defensores }) {
-    return (
+    useEffect(() => {
+        document.getElementById("agentesLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
+        return () => {
+            document.getElementById("agentesLink").firstElementChild.style.background = "none";
+        };
+    });
+        return (
         <div className="Agents">
             <div className="Titulo1"><h1 className="text-center" id="Titulo">Atacantes</h1></div>
             <div className="container d-flex justify-content-center align-items-center h-100">

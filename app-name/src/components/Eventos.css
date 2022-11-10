@@ -4,7 +4,7 @@
     height: 100vh;
 }
 
-.Titulo3{
+.Titulo3 *{
     color: #00ddff;
-    padding-top: 100px;
+    padding-top: 50px;
 }
