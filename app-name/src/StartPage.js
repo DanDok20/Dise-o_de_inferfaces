@@ -5,10 +5,8 @@ import {Link} from 'react-router-dom'
 function StartPage() {
   useEffect(() => {
     document.getElementById("inicioLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
-    document.querySelector(".App").style.overflow = "hidden"
     return () => {
         document.getElementById("inicioLink").firstElementChild.style.background = "none";
-        document.querySelector(".App").style.overflow = "visible"
     };
   });
   return (

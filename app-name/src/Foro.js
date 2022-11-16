@@ -15,7 +15,7 @@ function Foro() {
         <div className="card">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="/Foro/A.jpg" className="img-fluid"></img>
+                    <img src="/Foro/A.jpg" className="img-fluid" alt="user"></img>
                 </div>
                 <div className="col-md-8">
                     <h3 className="card-title mt-2"> Titulo </h3>
@@ -31,7 +31,7 @@ function Foro() {
         <div className="card">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="/Foro/B.jpg" className="img-fluid"></img>
+                    <img src="/Foro/B.jpg" className="img-fluid" alt="user"></img>
                 </div>
                 <div className="col-md-8">
                     <h3 className="card-title mt-3"> Titulo </h3>
@@ -47,7 +47,7 @@ function Foro() {
         <div className="card">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="/Foro/C.jpg" className="img-fluid"></img>
+                    <img src="/Foro/C.jpg" className="img-fluid" alt="user"></img>
                 </div>
                 <div className="col-md-8">
                     <h3 className="card-title mt-3"> Titulo </h3>
@@ -63,7 +63,7 @@ function Foro() {
         <div className="card">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="/Foro/D.jpg" className="img-fluid"></img>
+                    <img src="/Foro/D.jpg" className="img-fluid" alt="user"></img>
                 </div>
                 <div className="col-md-8">
                     <h3 className="card-title mt-3"> Titulo </h3>
@@ -79,7 +79,7 @@ function Foro() {
         <div className="card">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="/Foro/E.jpg" className="img-fluid"></img>
+                    <img src="/Foro/E.jpg" className="img-fluid" alt="user"></img>
                 </div>
                 <div className="col-md-8">
                     <h3 className="card-title mt-3"> Titulo </h3>
@@ -95,7 +95,7 @@ function Foro() {
         <div className="card">
             <div className="row">
                 <div className="col-md-4">
-                    <img src="/Foro/F.jpg" className="img-fluid"></img>
+                    <img src="/Foro/F.jpg" className="img-fluid" alt="user"></img>
                 </div>
                 <div className="col-md-8">
                     <h3 className="card-title mt-3"> Titulo </h3>

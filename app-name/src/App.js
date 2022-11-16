@@ -12,9 +12,8 @@ import NavBar from './Nav'
 import NotFoundMessage from './NotFound'
 import Foro from './Foro'
 import InfoAgent from './InfoAgent'
-import InfoMap from './infoMap'
+import InfoMap from './InfoMap'
 import Footer from './Footer'
-import Terminos from './Terminos'
 import Privacidad from './Privacidad'
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
         <Route path='/contactanos' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>
-        <Route path='/Terminos' element={<Terminos/>}/>
         <Route path='/Privacidad' element={<Privacidad/>}/>
         <Route path="*" element={<NotFoundMessage/>}/>
       </Routes>
