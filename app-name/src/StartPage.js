@@ -3,25 +3,33 @@ import "./components/StartPage.css";
 import {Link} from 'react-router-dom'
 
 function StartPage() {
-  useEffect(() => {
-    document.getElementById("inicioLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
-    document.querySelector(".App").style.overflow = "hidden"
-    return () => {
-        document.getElementById("inicioLink").firstElementChild.style.background = "none";
-        document.querySelector(".App").style.overflow = "visible"
-    };
-  });
   return (
-    <div className="StartPage">
-      <div>
-      <iframe width="100%" height="50%" margin="0" src="https://www.youtube.com/embed/KlbLLRdg9u8?start=39&end=103&autoplay=1&loop=1&controls=0&mute=1&playlist=KlbLLRdg9u8" title="Inside Rainbow Official Trailer – Tom Clancy's Rainbow Six Siege"></iframe>
-      </div>
-      <div className='comienzo'>
-        <Link to='/foro'>
-          <button>EMPEZAR</button>
-        </Link>
-      </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Inicio/A.jpg" class="d-block w-100" alt="imagen" ></img>
     </div>
+    <div class="carousel-item">
+      <img src="Inicio/B.jpg" class="d-block w-100" alt="imagen"></img>
+    </div>
+    <div class="carousel-item">
+      <img src="Inicio/C.jpg" class="d-block w-100" alt="imagen"></img>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   );
 }
 
