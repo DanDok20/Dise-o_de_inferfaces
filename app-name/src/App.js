@@ -15,6 +15,7 @@ import InfoAgent from './InfoAgent'
 import InfoMap from './InfoMap'
 import Footer from './Footer'
 import Privacidad from './Privacidad'
+import Terminos from './Terminos'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>
         <Route path='/Privacidad' element={<Privacidad/>}/>
+        <Route path='/Terminos' element={<Terminos/>}/>        
         <Route path="*" element={<NotFoundMessage/>}/>
       </Routes>
         <Footer/>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,900&display=swap');
+
   li {
     display: inline-flex;
     list-style: none;
@@ -13,4 +15,8 @@
   #userIcon{
     margin-left: 10px;
     margin-right: 20px;
+  }
+
+  #logoName{
+    font-family: 'Source Serif Pro', serif;
   }

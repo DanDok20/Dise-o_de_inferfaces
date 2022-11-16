@@ -8,6 +8,7 @@ function NavBar() {
             <Link className="nav-link" to='/'> 
                 <img src="/logo.png" alt="LOGO" width="98px" heigth="121px"></img>
             </Link>
+            <h1 id="logoName"><b>Rainbow Tactics</b></h1>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>
