@@ -25,6 +25,7 @@ function Maps({mapas}) {
                 </div>
                 
             </div>
+            <br></br><br></br><br></br><br></br>
         </div>
 
     )

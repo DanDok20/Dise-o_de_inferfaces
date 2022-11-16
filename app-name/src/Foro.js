@@ -9,41 +9,110 @@ function Foro() {
         };
     });
     return (
-        <div>
-            <div className="post" >
-                <img src="/agents/agent1.jpg" alt="user"className="userPhoto" width="100%" height="100%"></img>
-                <div className="information">
-                    <h2>Lorem ipsu!</h2>
-                    <p>Jadwo dawoe djas dakew<br/>Jodwowkd! dieha Ndiwde cnciac</p>
+    <div className="foro">
+        <div className="container mt-5">
+
+        <div className="card">
+            <div className="row">
+                <div className="col-md-4">
+                    <img src="/Foro/A.jpg" className="img-fluid"></img>
                 </div>
-                <div className="rate">
-                    <div className="like"></div>
-                    <div className="dislike"></div>
-                </div>
-            </div>
-            <div className="post" >
-                <img src="/agents/agent1.jpg" alt="user"className="userPhoto" width="100%" height="100%"></img>
-                <div className="information">
-                    <h2>Lorem ipsu rataka Kiwxcs?</h2>
-                    <p>Jadwo dawoe djas dakedwi idwa mdaeolk Jaka!<br/>Hua jies Iksd sas,ieha Ndiwde cnciac</p>
-                </div>
-                <div className="rate">
-                    <div className="like"></div>
-                    <div className="dislike"></div>
-                </div>
-            </div>
-            <div className="post" >
-                <img src="/agents/agent1.jpg" alt="user"className="userPhoto" width="100%" height="100%"></img>
-                <div className="information">
-                    <h2>Yhawja Juw xcal!! Knase? Dasescm...</h2>
-                    <p>Jadwo dawoe djas dakew<br/>Jodwowkd! dieha Ndiwde cnciac</p>
-                </div>
-                <div className="rate">
-                    <div className="like"></div>
-                    <div className="dislike"></div>
+                <div className="col-md-8">
+                    <h3 className="card-title mt-2"> Titulo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    </p>
+                    <button class="btn btn-primary">Leer mas</button>
+                    <br></br><br></br>
                 </div>
             </div>
         </div>
+
+        <div className="card">
+            <div className="row">
+                <div className="col-md-4">
+                    <img src="/Foro/B.jpg" className="img-fluid"></img>
+                </div>
+                <div className="col-md-8">
+                    <h3 className="card-title mt-3"> Titulo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    </p>
+                    <button class="btn btn-primary">Leer mas</button>
+                    <br></br><br></br>
+                </div>
+            </div>
+        </div>
+
+        <div className="card">
+            <div className="row">
+                <div className="col-md-4">
+                    <img src="/Foro/C.jpg" className="img-fluid"></img>
+                </div>
+                <div className="col-md-8">
+                    <h3 className="card-title mt-3"> Titulo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    </p>
+                    <button class="btn btn-primary">Leer mas</button>
+                    <br></br><br></br>
+                </div>
+            </div>
+        </div>
+
+        <div className="card">
+            <div className="row">
+                <div className="col-md-4">
+                    <img src="/Foro/D.jpg" className="img-fluid"></img>
+                </div>
+                <div className="col-md-8">
+                    <h3 className="card-title mt-3"> Titulo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    </p>
+                    <button class="btn btn-primary">Leer mas</button>
+                    <br></br><br></br>
+                </div>
+            </div>
+        </div>
+
+        <div className="card">
+            <div className="row">
+                <div className="col-md-4">
+                    <img src="/Foro/E.jpg" className="img-fluid"></img>
+                </div>
+                <div className="col-md-8">
+                    <h3 className="card-title mt-3"> Titulo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    </p>
+                    <button class="btn btn-primary">Leer mas</button>
+                    <br></br><br></br>
+                </div>
+            </div>
+        </div>
+
+        <div className="card">
+            <div className="row">
+                <div className="col-md-4">
+                    <img src="/Foro/F.jpg" className="img-fluid"></img>
+                </div>
+                <div className="col-md-8">
+                    <h3 className="card-title mt-3"> Titulo </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
+                    </p>
+                    <button class="btn btn-primary">Leer mas</button>
+                    <br></br><br></br>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <br></br><br></br><br></br><br></br>
+    </div>
+
+
     )
 }
 

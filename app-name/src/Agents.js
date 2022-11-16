@@ -37,6 +37,7 @@ function Agents({ atacantes, defensores }) {
                     }
                 </div>
             </div>
+            <br></br><br></br><br></br><br></br>
         </div>
 
     )
