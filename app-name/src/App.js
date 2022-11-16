@@ -14,6 +14,8 @@ import Foro from './Foro'
 import InfoAgent from './InfoAgent'
 import InfoMap from './InfoMap'
 
+import LoginR from './LoginV2'
+
 function App() {
   return (
     <div className="App">
@@ -32,6 +34,8 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>
         <Route path="*" element={<NotFoundMessage/>}/>
+
+        <Route path="/omega" element={<LoginR/>}/>
       </Routes>
     </div>    
   );

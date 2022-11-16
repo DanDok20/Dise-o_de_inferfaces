@@ -97,12 +97,11 @@
 
 sendButton{
     display: inline-flex;
-    position: relative;
-    margin-top: 70%;
-    margin-left: -50%;
+    position: static;
+    margin-left: 25%;
     padding: 55px 80px;
     border-radius: 25px;
-    font-size: 2.4vw;
+    font-size: calc(1.525rem + 0.7vw);
     color: black;
     border: none;
     background-color: #b1d4e0;

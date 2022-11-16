@@ -42,7 +42,7 @@ function ContactUs() {
                       <p className="question-descriptions" required> Mensaje (*): <textarea className="message-box-design" placeholder="Escribe tu mensaje aquí..."></textarea> </p>
                   </div>
 
-                  <div class="col-md-2 mt-8">
+                  <div class="col-sm-12 col-md-2 mt-8">
                       <sendButton> Enviar </sendButton>
                   </div>
               </div>
