@@ -1,79 +1,12 @@
-.RegisterPage {
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
+.register-bg {
+    padding-top: 1.5%;
+    padding-bottom: 4.5%;
+    background: rgb(17,31,76);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,23,1) 17%, rgba(14,21,97,1) 100%);
 }
 
-.left {
-    left: 0;
-    background-color: rgb(18, 31, 76);
-}
-
-.right {
-    right: 0;
-    background-color: white;
-}
-
-.iframe_logon_icon{
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
-    pointer-events: none;
-    position: absolute;
-    transform: translate(2, 2);
-    width: 50%;
-}
-
-.prompt {
-    background-color: white;
-    position: absolute;
-    right: 0px;
-    width: 50%;
-    height: 100%;
-} 
-
-.login-input{
-    width: 110%;
-    padding: 12px 20px;
-    margin: 10px 52px 0px -193px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-registerButtonV2{
-    display: inline-flex;
-    position: absolute;
-    justify-content: center;
-    margin: 50px 200px 100px -266px;
-    padding: 25px 40px;
-    border-radius: 15px;
-    font-size: 1.4vw;
-    color: white;
-    border: none;
-    background-color: #051d40;
-    font-weight:500;
-    right: 45.5%;
-    left: 20%;
-    cursor: pointer;
-}
-
-registerButtonV2:hover{
-    background-color: #0a326f;
-}
-
-.ifUserAlreadyHasAnAccount{
-    text-align: center;
-    width: 40%;
-    font-size: 140%;
-    padding: 6px 10px;
-    margin: 22px 0px 10px 50px;
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.ifUserAlreadyHasAnAccount:hover{
-    font-size: #0a326f;
+.glitch-img {
+    background-image: url("https://i.ibb.co/vB9mL3V/glitch.png");
+    background-size: 50vh;
+    background-position: center; 
 }

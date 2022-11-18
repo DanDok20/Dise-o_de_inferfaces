@@ -13,17 +13,21 @@ function NotFoundMessage() {
                     Parece que acá debería haber existido algo, pero no encontramos nada.<br/> 
                     Intentalo de nuevo, o regresa a la pagina principal.<br/>
 
-                    <img src="/broken_gun.png" alt="ErrorGun"></img><br/>
+                    <img id="image_size_mod" class="my-3" src="/broken_gun.png" alt="ErrorGun"></img><br/>
                 </p>
             </div>
             
-            <Link to="/">
-                <button type="submit" class="btn btn-primary">Volver</button>
-            </Link>
+            
         </div>
+        
+    </div>
+    
+    <div class="row" align="center">
+    <Link to="/">
+        <button type="submit" class="btn btn-primary return-button">Volver</button>
+    </Link>
     </div>
 </div>
-<br/><br/><br/><br/><br/>
 </div>
         
     );

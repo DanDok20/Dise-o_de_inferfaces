@@ -1,0 +1,115 @@
+.ContactPage {
+    background-image: url('https://i.ibb.co/ryD16bH/contact-us-background.png');
+    background-size: cover;
+    min-height: 90vh;
+    position: static;
+}
+
+
+.formulary-bg {
+    left: 5%;
+    width: 36em;
+    height: 33.5em;
+    border: 2px solid #fff;
+    background: rgba(20, 10, 55, 0.9);
+    border-radius: 25px;
+    margin: 25px 25px 200px -50px;
+    position: fixed;
+}
+
+.title-details {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(1.525rem + 1.2vw);
+    text-shadow: 5px 5px #092536;
+    margin-top: 14px;
+    color: #b1d4e0;
+}
+
+.description {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(0.525rem + 0.7vw);
+    color: #ffff;
+}
+
+.developer-info {
+    text-align: center;
+    margin-top: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: #b1d4e0;
+}
+
+.question-descriptions {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-left: 15%;
+    color: #ffff;
+}
+
+.question-box-design {
+    color: white;
+    background-color:transparent;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #4C4A63;
+    width: 50%;
+    padding: 12px 12px;
+    margin-top: 1%;
+    margin-right: 50%;
+}
+
+.question-box-design:hover {
+    border-bottom: 2px solid #636182;
+}
+
+.select-box-design {
+    color: white;
+    background-color:transparent;
+    display: inline-block;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #4C4A63;
+    width: 50%;
+    padding: 12px 12px;
+    margin-top: 2%;
+    margin-right: 50%;
+}
+
+.blackcolor4optiontext {
+    color: black;
+}
+
+.message-box-design {
+    resize: none;
+    color: white;
+    background-color:transparent;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 12px;
+    width: 50%;
+    padding: 12px 12px 80px;
+    margin-top: 2%;
+    margin-right: 50%;
+}
+
+sendButton{
+    display: inline-flex;
+    position: static;
+    margin-left: 25%;
+    padding: 55px 80px;
+    border-radius: 25px;
+    font-size: calc(1.525rem + 0.7vw);
+    color: black;
+    border: none;
+    background-color: #b1d4e0;
+    font-weight:350;
+    cursor: pointer;
+}
+
+sendButton:hover{
+    background-color: #7eb7d0;
+}

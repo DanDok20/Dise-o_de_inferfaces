@@ -1,63 +1,44 @@
 import React from "react";
 import "./components/Register.css";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 function Registration(){
-    const title1Details = {
-        marginTop: 20,
-        marginLeft: -350,
-        textAlign: 'center',
-        fontFamily: 'monospace',
-        color: 'black',
-        fontSize: 50,
-    };
-    const belowTitle1 = {
-        textAlign: 'center',
-        marginTop: 24,
-        marginLeft: -345,
-        fontFamily: 'monospace',
-        fontWeight: 'bold',
-        color: 'gray',
-        fontSize: 25,
-    };
-    const inputDescriptions = { 
-        textAlign: 'left',
-        marginTop: 10,
-        marginLeft: -193, 
-        fontFamily: 'Helvetica Light',
-        fontSize: 20,
-        display: 'block',
-    };
     return(
-        <div className="Registration">
-            <div className="RegisterPage left">
-                <div className="iframe_logon_icon">
-                    <img src={"https://i.ibb.co/hYBFvMR/login-logo.gif"} width="100%" alt="Glitch"></img>
+        <div className="register-bg">
+        <div class="container w-75 bg-primary mt-5 rounded shadow">
+            <div class="row align-items-stretch">
+                <div class="col glitch-img d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                
                 </div>
-            </div>
-            
-            <div className="RegisterPage right">
-                <div className="prompt">
-                    <h1 style={title1Details}> ¿Listo para ser <br></br> el profesional <br></br> de Rainbow Six? </h1>
-                    <p style={belowTitle1}> Registrate ya! </p>
-                    <form>
-                        <label style={inputDescriptions}> CORREO <br></br> </label>
-                        <input className="login-input" type="text"></input>
-                        <label style={inputDescriptions}> NOMBRE DE USUARIO <br></br> </label>
-                        <input className="login-input" type="text"></input>
-                        <label style={inputDescriptions}> CONTRASEÑA <br></br> </label>
-                        <input className="login-input" type="password"></input>
-                    </form>
-                    <Link to='/'>
-                        <registerButtonV2> REGISTRATE </registerButtonV2>
-                    </Link>
+                <div class="col bg-white p-5 rounded-end textual-quirks">
+                    <h2 class="fw-bold text-center py-5">¿Listo para ser el profesional de Rainbow Six?</h2>
 
-                    <Link to='/login'>
-                        <a className="ifUserAlreadyHasAnAccount"> Ya tienes una cuenta? Ingresa aquí </a>
-                    </Link>
+                    <form action="#">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">CORREO DE USUARIO</label>
+                            <input type="email" class="form-control" name="email"></input>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label">NOMBRE DE USUARIO</label>
+                            <input type="email" class="form-control" name="email"></input>
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">CONTRASEÑA</label>
+                            <input type="password" class="form-control" name="password"></input>
+                        </div>
+
+                        <div class="d-grid">
+                            <Link to='/'> <button type="submit" class="btn btn-primary w-100 text-decoration-underline">Registrate</button> </Link>
+                        </div>
+                        
+                        <div class="text-center my-3">
+                            <span>Ya tienes una cuenta? <Link to='/login'><a href="#">Ingresa aquí</a></Link></span>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     );
 }
 

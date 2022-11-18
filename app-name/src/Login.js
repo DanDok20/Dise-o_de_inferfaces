@@ -1,61 +1,40 @@
 import React from "react";
 import "./components/Login.css";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 function Login(){
-    const title1Details = {
-        marginTop: 20,
-        marginLeft: -350,
-        textAlign: 'center',
-        fontFamily: 'monospace',
-        color: 'black',
-        fontSize: 50,
-    };
-    const belowTitle1 = {
-        textAlign: 'center',
-        marginTop: 24,
-        marginLeft: -345,
-        fontFamily: 'monospace',
-        fontWeight: 'bold',
-        color: 'gray',
-        fontSize: 25,
-    };
-    const inputDescriptions = { 
-        textAlign: 'left',
-        marginTop: 10,
-        marginLeft: -170, 
-        fontFamily: 'Helvetica Light',
-        fontSize: 20,
-        display: 'block',
-    };
     return(
-        <div className='Login'>
-            <div className='LoginPage left'>
-                <div className="iframe_logon_icon">
-                    <img src={"https://i.ibb.co/hYBFvMR/login-logo.gif"} width="100%" alt="Glitch"></img>
+    <div className="login-bg">
+        <div class="container w-75 bg-primary mt-5 rounded shadow">
+            <div class="row align-items-stretch">
+                <div class="col glitch-img d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                
                 </div>
-            </div>
+                <div class="col bg-white p-5 rounded-end textual-quirks">
+                    <h2 class="fw-bold text-center py-5">¿Listo para ser el profesional de Rainbow Six?</h2>
 
-            <div className='LoginPage right'>
-                <div className="prompt">
-                    <h1 style={title1Details}> ¿Listo para ser <br/>el profesional <br/>de Rainbow Six? </h1>
-                    <p style={belowTitle1}> Entra ya! </p>
-                    <form>
-                        <label style={inputDescriptions}> USUARIO <br></br> </label>
-                        <input className="login_input" type="text"></input>
-                        <label style={inputDescriptions}> CONTRASEÑA <br></br> </label>
-                        <input className="login_input" type="password"></input>
+                    <form action="#">
+                        <div class="mb-4">
+                            <label for="email" class="form-label">USUARIO</label>
+                            <input type="email" class="form-control" name="email"></input>
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">CONTRASEÑA</label>
+                            <input type="password" class="form-control" name="password"></input>
+                        </div>
+
+                        <div class="d-grid">
+                            <Link to='/'> <button type="submit" class="btn btn-primary w-100 text-decoration-underline">Login</button> </Link>
+                        </div>
+                        
+                        <div class="d-grid mb-4 my-3">
+                            <Link to='/registro'> <button type="submit" class="btn btn-info w-100 text-decoration-underline">Registrate</button> </Link>
+                        </div>
                     </form>
-                    <Link to='/'>
-                        <loginButton> LOGIN </loginButton>
-                    </Link>
-                    <Link to='/registro'>
-                        <registerButton> REGISTRATE </registerButton>
-                    </Link>
                 </div>
             </div>
         </div>
-        
+    </div>
     );
 }
 
