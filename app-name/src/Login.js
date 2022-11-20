@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./components/Login.css";
 import {Link} from 'react-router-dom';
 
 function Login(){
+    useEffect(() => {
+        document.getElementById("loginLink").firstElementChild.style.background = "rgba(255, 255, 255, 0.584)";
+        return () => {
+            document.getElementById("loginLink").firstElementChild.style.background = "none";
+        };
+    });
     return(
     <div className="login-bg">
         <div class="container w-75 bg-primary mt-5 rounded shadow">
@@ -24,11 +30,11 @@ function Login(){
                         </div>
 
                         <div class="d-grid">
-                            <Link to='/'> <button type="submit" class="btn btn-primary w-100 text-decoration-underline">Login</button> </Link>
+                            <Link to='/'> <button type="submit" class="btn btn-primary w-100">Login</button> </Link>
                         </div>
                         
                         <div class="d-grid mb-4 my-3">
-                            <Link to='/registro'> <button type="submit" class="btn btn-info w-100 text-decoration-underline">Registrate</button> </Link>
+                            <Link to='/registro'> <button type="submit" class="btn btn-info w-100">Registrate</button> </Link>
                         </div>
                     </form>
                 </div>

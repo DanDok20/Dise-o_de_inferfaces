@@ -63,22 +63,19 @@ let initialState = {
         id: 11,
         name: 'THUNDERBIRD',
         image: "/agents/agent11.jpg",
-        descripcion: "Nacida en los Territorios Nakoda de Saskatchewan, la primera lección de Thunderbird de su madre fue la importancia de la comunidad. Su primera introducción a los motores fue en las rodillas de su padre, él le enseñó a entender los helicópteros antes de aprender a volar uno.\
-        Siempre ansiosa por nuevas experiencias, se inscribió en el Programa Bold Eagle a los diecisiete años, donde se destacó en el entrenamiento militar básico. Mientras se beneficiaba de la guía de los ancianos de la comunidad y de los instructores indígenas, este programa despertó su interés en preservar y proteger lo que más amaba, el estilo de vida Nakoda."
+        descripcion: "Nacida en los Territorios Nakoda de Saskatchewan, la primera lección de Thunderbird de su madre fue la importancia de la comunidad. Su primera introducción a los motores fue en las rodillas de su padre, él le enseñó a entender los helicópteros antes de aprender a volar uno. Siempre ansiosa por nuevas experiencias, se inscribió en el Programa Bold Eagle a los diecisiete años, donde se destacó en el entrenamiento militar básico. Mientras se beneficiaba de la guía de los ancianos de la comunidad y de los instructores indígenas, este programa despertó su interés en preservar y proteger lo que más amaba, el estilo de vida Nakoda."
     },
     {
         id: 12,
         name: 'ARUNI',
         image: "/agents/agent12.jpg",
-        descripcion: "As a private detective, her discovery of a bomb plot in Bangkok brought Aruni to the attention of the Royal Thai Police (RTP). Her knack for connecting the dots between seemingly-unrelated incidents earned her grudging respect from Thailand’s male-dominated law enforcement agencies, as well as hostility from numerous criminal syndicates.\
-        The RTP offered Aruni a Detective position with the Crime Suppression Division, where she dismantled a human trafficking ring and foiled no fewer than four bomb plots. Her ability to track and connect diverse shipments of explosive materials was lauded by her superiors. Unfortunately, Aruni’s police career ended when she was nearly killed during an operation in Bangkok."
+        descripcion: "As a private detective, her discovery of a bomb plot in Bangkok brought Aruni to the attention of the Royal Thai Police (RTP). Her knack for connecting the dots between seemingly-unrelated incidents earned her grudging respect from Thailand’s male-dominated law enforcement agencies, as well as hostility from numerous criminal syndicates. The RTP offered Aruni a Detective position with the Crime Suppression Division, where she dismantled a human trafficking ring and foiled no fewer than four bomb plots. Her ability to track and connect diverse shipments of explosive materials was lauded by her superiors. Unfortunately, Aruni’s police career ended when she was nearly killed during an operation in Bangkok."
     },
     {
         id: 13,
         name: 'MELUSI',
         image: "/agents/agent13.jpg",
-        descripcion: "Nacida en la pequeña ciudad de Louwsburg, cerca de la reserva de caza de Ithala, Ndlovu pasó muchos años explorando con su amiga, Elna Gardiner. A medida que crecían, también lo hacía su aprecio y sentido de responsabilidad por los animales de la reserva. La amenaza de los cazadores furtivos alimentó su determinación y, aunque estaban obsesionados, se concentraron en las vidas que podían salvar, en lugar de las bajas pasadas.\
-        Ndlovu se inscribió en la Fuerza de Defensa Nacional de Sudáfrica para ampliar su conjunto de habilidades y financiar su capacitación como guardabosques de campo. Su persistencia y dedicación llamaron la atención del 1 Batallón de Paracaidistas, hasta que una emboscada en la República Centroafricana la dejó gravemente herida."
+        descripcion: "Nacida en la pequeña ciudad de Louwsburg, cerca de la reserva de caza de Ithala, Ndlovu pasó muchos años explorando con su amiga, Elna Gardiner. A medida que crecían, también lo hacía su aprecio y sentido de responsabilidad por los animales de la reserva. La amenaza de los cazadores furtivos alimentó su determinación y, aunque estaban obsesionados, se concentraron en las vidas que podían salvar, en lugar de las bajas pasadas. Ndlovu se inscribió en la Fuerza de Defensa Nacional de Sudáfrica para ampliar su conjunto de habilidades y financiar su capacitación como guardabosques de campo. Su persistencia y dedicación llamaron la atención del 1 Batallón de Paracaidistas, hasta que una emboscada en la República Centroafricana la dejó gravemente herida."
     },
     {
         id: 14,

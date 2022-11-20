@@ -1,8 +1,12 @@
 .map{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     column-gap: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 10%;
     color: white;
+}
+
+.mapPhoto {
+    width: 100%;
+    height: auto;
 }

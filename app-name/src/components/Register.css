@@ -7,6 +7,7 @@
 
 .glitch-img {
     background-image: url("https://i.ibb.co/vB9mL3V/glitch.png");
-    background-size: 50vh;
-    background-position: center; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

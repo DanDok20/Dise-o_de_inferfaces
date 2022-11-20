@@ -32,10 +32,10 @@ function NavBar() {
             <li className="nav-item active" id="contactanosLink">
                 <Link className="nav-link text-light" to='/contactanos'> Contactanos </Link>
             </li>
-            <li className="nav-item active">
+            <li className="nav-item active" id="loginLink">
                 <Link className="nav-link text-light" to='/login'> Login </Link>
             </li>
-            <li className="nav-item active">
+            <li className="nav-item active" id="registroLink">
                 <Link className="nav-link text-light" to='/registro'> Registro </Link>
             </li>
             </ul>
