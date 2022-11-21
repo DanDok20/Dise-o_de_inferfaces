@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import {Link} from 'react-router-dom';
 import './components/Foro.css';
 
 function Foro() {
@@ -22,7 +23,7 @@ function Foro() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     </p>
-                    <button class="btn btn-primary">Leer mas</button>
+                    <Link to='/foro/post-1'> <button class="btn btn-primary">Leer mas</button> </Link>
                     <br></br><br></br>
                 </div>
             </div>
@@ -38,7 +39,7 @@ function Foro() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     </p>
-                    <button class="btn btn-primary">Leer mas</button>
+                    <Link to='/foro/post-2'> <button class="btn btn-primary">Leer mas</button> </Link>
                     <br></br><br></br>
                 </div>
             </div>
@@ -54,7 +55,7 @@ function Foro() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     </p>
-                    <button class="btn btn-primary">Leer mas</button>
+                    <Link to='/foro/post-3'> <button class="btn btn-primary">Leer mas</button> </Link>
                     <br></br><br></br>
                 </div>
             </div>
@@ -70,7 +71,7 @@ function Foro() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     </p>
-                    <button class="btn btn-primary">Leer mas</button>
+                    <Link to='/foro/post-4'> <button class="btn btn-primary">Leer mas</button> </Link>
                     <br></br><br></br>
                 </div>
             </div>
@@ -86,7 +87,7 @@ function Foro() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     </p>
-                    <button class="btn btn-primary">Leer mas</button>
+                    <Link to='/foro/post-5'> <button class="btn btn-primary">Leer mas</button> </Link>
                     <br></br><br></br>
                 </div>
             </div>
@@ -102,7 +103,7 @@ function Foro() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat at animi unde, et, obcaecati eius.
                     </p>
-                    <button class="btn btn-primary">Leer mas</button>
+                    <Link to='/foro/post-6'> <button class="btn btn-primary">Leer mas</button> </Link>
                     <br></br><br></br>
                 </div>
             </div>

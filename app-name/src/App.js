@@ -11,6 +11,7 @@ import ContactUs from './ContactUs'
 import NavBar from './Nav'
 import NotFoundMessage from './NotFound'
 import Foro from './Foro'
+import InfoForo from './ForoPost'
 import InfoAgent from './InfoAgent'
 import InfoMap from './InfoMap'
 import Footer from './Footer'
@@ -31,6 +32,12 @@ function App() {
         <Route path='/mapas/:mapName' element={<InfoMap/>}/>
         <Route path='/eventos' element={<Eventos/>}/>
         <Route path='/foro' element={<Foro/>}/>
+        <Route path='/foro/post-1' element={<InfoForo/>}/>
+        <Route path='/foro/post-2' element={<InfoForo/>}/>
+        <Route path='/foro/post-3' element={<InfoForo/>}/>
+        <Route path='/foro/post-4' element={<InfoForo/>}/>
+        <Route path='/foro/post-5' element={<InfoForo/>}/>
+        <Route path='/foro/post-6' element={<InfoForo/>}/>
         <Route path='/contactanos' element={<ContactUs/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/registro' element={<Registration/>}/>

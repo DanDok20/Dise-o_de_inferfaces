@@ -1,0 +1,48 @@
+.foro{
+    background: rgb(2,0,36);
+    background: linear-gradient(360deg, rgba(2,0,36,1) 0%, rgba(0,0,23,1) 17%, rgba(14,21,97,1) 100%);
+}
+
+.post{
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    background-color: #152480;
+    color: white;
+    margin: 10px;
+}
+
+.userPhoto{
+    padding: 10px;
+}
+
+.dislike{
+    width: 0; 
+    height: 0; 
+    border-top: 100px solid rgb(39, 57, 198); 
+    border-left: 50px solid transparent; 
+    border-right: 50px solid transparent;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+.like{
+    width: 0; 
+    height: 0; 
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgb(82, 134, 255);
+    cursor: pointer;
+    justify-content:center;
+    align-items:baseline;
+    display:flex;
+}
+
+.like:hover{
+    border-bottom: 100px solid rgb(70, 113, 213);
+}
+
+.dislike:hover{
+    border-top: 100px solid rgb(29, 42, 144);
+}
