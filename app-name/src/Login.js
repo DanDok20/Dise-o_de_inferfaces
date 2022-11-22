@@ -1,7 +1,7 @@
-import React, {useEffect, useState, useNavigate} from "react";
+import React, {useEffect, useState} from "react";
 import { UserAuth } from "./context/AuthContext";
 import "./components/Login.css";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import { async } from "@firebase/util";
 
 function Login(){
@@ -19,6 +19,7 @@ function Login(){
 
     const loguearse = async () => {
         await sigin(email, password);
+        navigate('/perfil')
     }
 
     return(
@@ -42,12 +43,12 @@ function Login(){
                         </div>
 
                         <div class="d-grid">
-                            <button class="btn btn-primary w-100">Login</button>
+                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                        </div>
+                        <div class="text-center my-3">
+                            <span>No tienes cuenta? <Link to='/registro'><a href="#">Ingresa aquí</a></Link></span>
                         </div>
                     </form>
-                    <div class="d-grid mb-4 my-3">
-                        <Link to='/registro'> <button class="btn btn-info w-100">Registrate</button> </Link>
-                    </div>
                 </div>
             </div>
         </div>
