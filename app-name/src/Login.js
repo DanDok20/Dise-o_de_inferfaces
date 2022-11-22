@@ -21,7 +21,7 @@ function Login(){
 
                     <form action="#">
                         <div class="mb-4">
-                            <label for="email" class="form-label">USUARIO</label>
+                            <label for="email" class="form-label">CORREO</label>
                             <input type="email" class="form-control" name="email"></input>
                         </div>
                         <div class="mb-4">

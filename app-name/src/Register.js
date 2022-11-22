@@ -1,6 +1,8 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import "./components/Register.css";
 import {Link} from 'react-router-dom';
+import {UserAuth} from "./context/AuthContext"
+import { async } from "@firebase/util";
 
 function Registration(){
     useEffect(() => {
@@ -9,6 +11,15 @@ function Registration(){
             document.getElementById("registroLink").firstElementChild.style.background = "none";
         };
     });
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const {addUser} = UserAuth();
+
+    const signUp = async (e) => {
+        await addUser(email, password);
+    }
+
     return(
         <div className="register-bg">
         <div class="container w-75 bg-primary mt-5 rounded shadow">
@@ -19,26 +30,26 @@ function Registration(){
                 <div class="col bg-white p-5 rounded-end textual-quirks">
                     <h2 class="fw-bold text-center py-5">¿Listo para ser el profesional de Rainbow Six?</h2>
 
-                    <form action="#">
+                    <form onSubmit={signUp}>
                         <div class="mb-4">
                             <label for="email" class="form-label">CORREO DE USUARIO</label>
-                            <input type="email" class="form-control" name="email"></input>
+                            <input type="email" class="form-control" name="email" onChange={(e) => setEmail(e.target.value)}></input>
                         </div>
                         <div class="mb-4">
                             <label for="email" class="form-label">NOMBRE DE USUARIO</label>
-                            <input type="email" class="form-control" name="email"></input>
+                            <input type="name" class="form-control" name="name"></input>
                         </div>
                         <div class="mb-4">
                             <label for="password" class="form-label">CONTRASEÑA</label>
-                            <input type="password" class="form-control" name="password"></input>
+                            <input type="password" class="form-control" name="password" onChange={(e) => setPassword(e.target.value)}></input>
                         </div>
 
                         <div class="d-grid">
-                            <Link to='/'> <button type="submit" class="btn btn-primary w-100">Registrate</button> </Link>
+                            <button class="btn btn-primary w-100">Registrate</button>
                         </div>
                         
                         <div class="text-center my-3">
-                            <span>Ya tienes una cuenta? <Link to='/login'><a href="#">Ingresa aquí</a></Link></span>
+                            <span>Ya tienes una cuenta?<Link to='/login'><a href="#">Ingresa aquí</a></Link></span>
                         </div>
                     </form>
                 </div>
