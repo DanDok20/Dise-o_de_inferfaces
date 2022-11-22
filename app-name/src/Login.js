@@ -1,6 +1,8 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState, useNavigate} from "react";
+import { UserAuth } from "./context/AuthContext";
 import "./components/Login.css";
 import {Link} from 'react-router-dom';
+import { async } from "@firebase/util";
 
 function Login(){
     useEffect(() => {
@@ -9,6 +11,16 @@ function Login(){
             document.getElementById("loginLink").firstElementChild.style.background = "none";
         };
     });
+
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const {sigin} = UserAuth();
+    const navigate = useNavigate();
+
+    const loguearse = async () => {
+        await sigin(email, password);
+    }
+
     return(
     <div className="login-bg">
         <div class="container w-75 bg-primary mt-5 rounded shadow">
@@ -19,24 +31,23 @@ function Login(){
                 <div class="col bg-white p-5 rounded-end textual-quirks">
                     <h2 class="fw-bold text-center py-5">¿Listo para ser el profesional de Rainbow Six?</h2>
 
-                    <form action="#">
+                    <form onSubmit={loguearse}>
                         <div class="mb-4">
                             <label for="email" class="form-label">CORREO</label>
-                            <input type="email" class="form-control" name="email"></input>
+                            <input type="email" class="form-control" name="email" onChange={(e) => setEmail(e.target.value)}></input>
                         </div>
                         <div class="mb-4">
                             <label for="password" class="form-label">CONTRASEÑA</label>
-                            <input type="password" class="form-control" name="password"></input>
+                            <input type="password" class="form-control" name="password" onChange={(e) => setPassword(e.target.value)}></input>
                         </div>
 
                         <div class="d-grid">
-                            <Link to='/'> <button type="submit" class="btn btn-primary w-100">Login</button> </Link>
-                        </div>
-                        
-                        <div class="d-grid mb-4 my-3">
-                            <Link to='/registro'> <button type="submit" class="btn btn-info w-100">Registrate</button> </Link>
+                            <button class="btn btn-primary w-100">Login</button>
                         </div>
                     </form>
+                    <div class="d-grid mb-4 my-3">
+                        <Link to='/registro'> <button class="btn btn-info w-100">Registrate</button> </Link>
+                    </div>
                 </div>
             </div>
         </div>

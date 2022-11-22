@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "./components/Register.css";
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import {UserAuth} from "./context/AuthContext"
 import { async } from "@firebase/util";
 
@@ -15,9 +15,10 @@ function Registration(){
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const {addUser} = UserAuth();
+    const navigate = useNavigate();
 
-    const signUp = async (e) => {
-        await addUser(email, password);
+    const signUp = async () => {
+        await addUser(email, password).then(navigate('/perfil'));
     }
 
     return(

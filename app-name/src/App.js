@@ -17,7 +17,9 @@ import InfoMap from './InfoMap'
 import Footer from './Footer'
 import Privacidad from './Privacidad'
 import Terminos from './Terminos'
+import Perfil from './Perfil'
 import {AuthContextProvider} from "./context/AuthContext"
+import ProtectedRoute from './ProtectedRoute'
 
 function App() {
   return (
@@ -44,7 +46,7 @@ function App() {
           <Route path='/registro' element={<Registration/>}/>
           <Route path='/Privacidad' element={<Privacidad/>}/>
           <Route path='/Terminos' element={<Terminos/>}/>
-          <Route path='/perfil'/>
+          <Route path='/perfil' element={<ProtectedRoute><Perfil/></ProtectedRoute>}/>
           <Route path="*" element={<NotFoundMessage/>}/>
         </Routes>
       </AuthContextProvider>
